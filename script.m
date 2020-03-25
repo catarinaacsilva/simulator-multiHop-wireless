@@ -1,4 +1,6 @@
-AP = [[250,100] [150,100; 350,100] [50,50; 250,100; 450,150]];
+AP = [250,100];
+% AP = [150,100; 350,100];
+% AP = [50,50; 250,100; 450,150];
 N = [20 40 60 80];
 S = [3 6];
 W = [40 60 80];
@@ -15,7 +17,7 @@ for w = 1:size(W,2)
             avgM = [];
             for i = 1:10
                 y=y+1
-                [A, M] = simulatorFunction(N(n),S(s),W(w),dlt,T,AP(1),pl);
+                [A, M] = simulatorFunction(N(n),S(s),W(w),dlt,T,AP,pl);
                 avgA = [avgA mean(A)]
                 avgM = [avgM min(M)]
             end
