@@ -71,7 +71,8 @@ The input and output parameters of the simulator are:
         W - radio range (in meters)
         dlt - time slot duration (in seconds)
         T - no. of time slots of the simulation
-        AP - matrix with one row per AP node and 2 columns where the first column has the horizontal coordinates and the second column has the vertical coordinates of the AP nodes
+        AP - matrix with one row per AP node and 2 columns where the first column has the horizontal 
+             coordinates and the second column has the vertical coordinates of the AP nodes
         pl - plot option: 
             0 - nothing;
             1 - nodes' movement;
