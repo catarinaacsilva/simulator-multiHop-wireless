@@ -9,7 +9,7 @@ T = 7200;
 pl = 0;
 
 y=0;
-rs=[];
+rs=[]; % result
 for w = 1:size(W,2)
     for s = 1:size(S,2)
         for n = 1:size(N,2)
@@ -21,8 +21,10 @@ for w = 1:size(W,2)
                 avgA = [avgA mean(A)]
                 avgM = [avgM min(M)]
             end
-            rs(n,s,w,1) = mean(avgA);
-            rs(n,s,w,2) = mean(avgM);
+            rs(n,s,w,1) = mean(avgA); % mean
+            rs(n,s,w,2) = mean(avgM); % min
+            rs(n,s,w,3) = 1.645*(std(avgA)/sqrt(10)); 
+            rs(n,s,w,4) = 1.645*(std(avgM)/sqrt(10)); 
         end
     end
 end
