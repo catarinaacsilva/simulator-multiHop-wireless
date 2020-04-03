@@ -107,6 +107,8 @@ Considering:
 
 - At plots directory you can see the obtained plots. To this plot was runned plots.m.
 
+- sim.m: Assume that  the radio  range  of  the  wireless  network  is 𝑊=  60  metersand  the maximum  speed  of  mobile  nodes  is  3  km/h. This code is to determine the minimum number  of APs  (and their  best locations)  such  that  the minimum  Internet  access  availability is not lower than 99% when the number of mobile nodes N is 40, 60 and 80. For all cases,  run an  enough  large  number  of  simulations  to  reach  an  adequate  90% confidence interval.
+
 
 ## Authors
 
